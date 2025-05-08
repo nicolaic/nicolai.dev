@@ -9,5 +9,5 @@
     }
 </script>
 
-<h1>Welcome to {PUBLIC_WORKER_URL}</h1>
+<h1>Testing GitHub Actions</h1>
 <button onclick={fetchHello}>Click me!!!</button>

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "pnpm run -r dev",
     "test": "pnpm run -r test",
-    "deploy": "pnpm run --filter=frontend build && wrangler deploy --env production"
+    "build": "pnpm run --filter=frontend build",
+    "deploy": "wrangler deploy --env production"
   },
   "keywords": [],
   "author": "",
