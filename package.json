@@ -1,0 +1,23 @@
+{
+  "name": "nicolai.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm run -r dev",
+    "test": "pnpm run -r test",
+    "deploy": "pnpm run --filter=frontend build && wrangler deploy --env production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.9.0",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "devDependencies": {
+    "wrangler": "^4.13.0"
+  }
+}

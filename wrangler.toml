@@ -1,0 +1,11 @@
+# Top-level configuration
+name = "nicolai-dev"
+main = "./backend/src/index.ts"
+compatibility_date = "2025-04-17"
+
+assets = { directory = "./frontend/build" }
+
+vars = { ENVIRONMENT = "dev" }
+
+[env.production]
+vars = { ENVIRONMENT = "production" }
