@@ -3,6 +3,9 @@ name = "nicolai-dev"
 main = "./backend/src/index.ts"
 compatibility_date = "2025-04-17"
 
+route = "nicolai.dev/*"
+workers_dev = false
+
 assets = { directory = "./frontend/build" }
 
 vars = { ENVIRONMENT = "dev" }
