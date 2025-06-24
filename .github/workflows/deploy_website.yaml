@@ -22,12 +22,12 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install
-      - name: Build SvelteKit application
+      - name: Build website
+        run: pnpm exec turbo build
         env:
           PUBLIC_WORKER_URL: ${{ vars.PUBLIC_WORKER_URL }}
-        run: pnpm run build
-      - name: Deploy with Wrangler
-        run: pnpm run deploy
+      - name: Deploy website
+        run: pnpm exec turbo deploy
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

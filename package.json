@@ -14,5 +14,8 @@
     "onlyBuiltDependencies": [
       "esbuild"
     ]
+  },
+  "dependencies": {
+    "turbo": "catalog:"
   }
 }

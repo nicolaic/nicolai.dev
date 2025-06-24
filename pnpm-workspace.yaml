@@ -4,4 +4,5 @@ packages:
   - shared
 
 catalog:
+  turbo: ^2.5.4
   wrangler: ^4.21.1

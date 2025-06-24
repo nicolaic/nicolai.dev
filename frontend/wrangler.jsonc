@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "compatibility_date": "2025-04-17",
+  "name": "nicolai-dev-frontend",
+  "workers_dev": false,
+  "preview_urls": false,
+  "route": {
+    "custom_domain": true,
+    "pattern": "nicolai.dev"
+  },
+  "assets": {
+    "directory": "./dist"
+  }
+}

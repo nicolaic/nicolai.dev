@@ -181,11 +181,18 @@ jspm_packages/
 .vscode-test
 
 
-### SvelteKit ###
-frontend/.output
-frontend/.svelte-kit
-frontend/build
+### Turbo ###
+# Turborepo task cache
+.turbo
+
 
 ### Wrangler ###
 .dev.vars
 .wrangler/
+dist/
+
+
+### SvelteKit ###
+frontend/.output
+frontend/.svelte-kit
+frontend/build
