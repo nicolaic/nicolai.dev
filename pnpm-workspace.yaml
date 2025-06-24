@@ -2,3 +2,6 @@ packages:
   - frontend
   - backend
   - shared
+
+catalog:
+  wrangler: ^4.21.1

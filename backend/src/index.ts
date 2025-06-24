@@ -17,22 +17,20 @@
 // 	},
 // } satisfies ExportedHandler<Env>;
 
-import { Hono } from 'hono'
-import {cors} from 'hono/cors';
-import {env} from "cloudflare:workers";
+import { Hono } from 'hono';
+import { cors } from 'hono/cors';
+import { env } from 'cloudflare:workers';
 
-const app = new Hono()
+const app = new Hono();
 
 if (env.ENVIRONMENT === 'dev') {
-	app.use(cors({
-		origin: '*' // TODO: Get from env variables
-	}))
+	app.use(cors({ origin: '*' }));
 }
 
-app.get('/api/hello', (c) => {
-	return c.text('Hello Hono!')
-})
+app.get('/api/hello', (ctx) => {
+	return ctx.text('Hello Hono!');
+});
 
-export default {
+export default <ExportedHandler>{
 	fetch: app.fetch,
-}
+};

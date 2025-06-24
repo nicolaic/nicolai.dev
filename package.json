@@ -1,13 +1,10 @@
 {
   "name": "nicolai.dev",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "My little corner of the internet",
   "scripts": {
     "dev": "pnpm run -r dev",
-    "test": "pnpm run -r test",
-    "build": "pnpm run --filter=frontend build",
-    "deploy": "wrangler deploy --env production"
+    "test": "pnpm run -r test"
   },
   "keywords": [],
   "author": "",
@@ -17,8 +14,5 @@
     "onlyBuiltDependencies": [
       "esbuild"
     ]
-  },
-  "devDependencies": {
-    "wrangler": "^4.13.0"
   }
 }
