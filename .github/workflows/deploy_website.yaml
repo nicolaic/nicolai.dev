@@ -30,8 +30,6 @@ jobs:
           restore-keys: ${{ runner.os }}-turbo-cache-
       - name: Build website
         run: pnpm exec turbo run build
-        env:
-          PUBLIC_WORKER_URL: ${{ vars.PUBLIC_WORKER_URL }}
       - name: Deploy website
         run: pnpm exec turbo run deploy
         env:

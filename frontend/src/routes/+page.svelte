@@ -1,12 +1,13 @@
 <script>
-    import { PUBLIC_WORKER_URL } from '$env/static/public';
+	import {BASE_URL} from "$lib";
 
-    async function fetchHello() {
-        const response = await fetch(`${PUBLIC_WORKER_URL}/hello`)
-        const text = await response.text()
+	async function fetchHello() {
+		import.meta.env.DEV
+		const response = await fetch(`${BASE_URL}/hello`)
+		const text = await response.text()
 
-        console.log("Response from Worker: " + text)
-    }
+		console.log("Response from Worker: " + text)
+	}
 </script>
 
 <h1>Testing GitHub Actions</h1>
