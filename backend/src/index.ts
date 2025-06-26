@@ -28,7 +28,7 @@ if (env.ENVIRONMENT === 'dev') {
 }
 
 app.get('/api/hello', (ctx) => {
-	return ctx.text('Hello Hono!');
+	return ctx.text('Hello Turborepo caching in GitHub Actions!');
 });
 
 export default <ExportedHandler>{
