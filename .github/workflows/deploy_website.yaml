@@ -11,6 +11,9 @@ jobs:
     strategy:
       matrix:
         node-version: [ 20 ]
+    env:
+      TURBO_TELEMETRY_DISABLED: 1
+      WRANGLER_SEND_METRICS: false
     steps:
       - uses: actions/checkout@v4
       - name: Install pnpm

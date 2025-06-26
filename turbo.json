@@ -2,14 +2,23 @@
 	"$schema": "./node_modules/turbo/schema.json",
 	"tasks": {
 		"test": {
-			"dependsOn": ["^test"]
+			"dependsOn": [
+				"^test"
+			]
 		},
 		"build": {
-			"outputs": ["dist/**"]
+			"outputs": [
+				"dist/**"
+			]
 		},
 		"deploy": {
-			"dependsOn": ["^deploy"],
-			"passThroughEnv": ["CLOUDFLARE_ACCOUNT_ID", "CLOUDFLARE_API_TOKEN"]
+			"dependsOn": [
+				"^deploy"
+			],
+			"passThroughEnv": [
+				"CLOUDFLARE_ACCOUNT_ID",
+				"CLOUDFLARE_API_TOKEN"
+			]
 		},
 		"dev": {
 			"persistent": true,
